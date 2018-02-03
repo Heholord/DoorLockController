@@ -5,12 +5,13 @@ class keypad():
     def __init__(self, columnCount = 4):
 
 
-        # GPIO.setmode(GPIO.BOARD)
+         GPIO.setmode(GPIO.BOARD)
         # or
-        GPIO.setmode(GPIO.BCM)
+        # GPIO.setmode(GPIO.BCM)
 
         # Define pins to use for 3x4 Keypad
         # Rows
+
     # pin1 = "P8_14"
     # pin2 = "P8_16"
     # pin3 = "P8_11"
@@ -31,29 +32,15 @@ class keypad():
         pin7 = 40
         pin8 = 24
 
-        # # CONSTANTS
-        # if columnCount is 3:
-        #     self.KEYPAD = [
-        #         [1,2,3],
-        #         [4,5,6],
-        #         [7,8,9],
-        #         ["*",0,"#"]
-        #     ]
+        self.KEYPAD = [
+            [1,2,3,"A"],
+            [4,5,6,"B"],
+            [7,8,9,"C"],
+            ["*",0,"#","D"]
+        ]
 
-            # self.ROW         = [pin7, pin6, pin5, pin4]
-            # self.COLUMN      = [pin3, pin2, pin1]
-
-            self.KEYPAD = [
-                [1,2,3,"A"],
-                [4,5,6,"B"],
-                [7,8,9,"C"],
-                ["*",0,"#","D"]
-            ]
-
-            self.ROW         = [pin4, pin3, pin2, pin1]
-            self.COLUMN      = [pin8, pin7, pin6, pin5]
-        else:
-            return
+        self.ROW         = [pin4, pin3, pin2, pin1]
+        self.COLUMN      = [pin8, pin7, pin6, pin5]
 
     def getKey(self):
 
