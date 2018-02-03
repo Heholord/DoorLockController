@@ -20,9 +20,11 @@ class Input:
 
     def read(self):
         self.trial = ""
-        while(self.keypad.read != "#"):
+        char = self.keypad.read()
+        while(char != "#"):
             self.trial += keypad.read()
             print(self.trial)
+            char = self.keypad.read()
         return self.trial
 
     def get_input(self):
