@@ -7,8 +7,8 @@ KEYPAD = [
         ["*","0","#","D"]
 ]
 
-COL_PINS = [0,5,6,13] # BCM numbering
-ROW_PINS = [19,26,20,21] # BCM numbering
+# COL_PINS = [0,5,6,13] # BCM numbering
+# ROW_PINS = [19,26,20,21] # BCM numbering
 
 ROW_PINS = [15,13,11,7] # BCM numbering
 COL_PINS = [21,18,16,12] # BCM numbering
