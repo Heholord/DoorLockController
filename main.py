@@ -7,5 +7,5 @@ door = Door()
 access = checker.auth()
 while not access:
     access = checker.auth()
-if access:
+#if access:
     door.open_door()
