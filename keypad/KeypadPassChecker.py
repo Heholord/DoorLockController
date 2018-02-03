@@ -1,5 +1,5 @@
-import keypad.keypad
-import tools.myfile
+from keypad import Keypad
+from tools import myfile
 
 
 class Keypad_pass_checker:
@@ -40,3 +40,6 @@ class Checker:
         print("solution " + self.solution.strip())
         print("input " + input.get_input().strip())
         return self.solution.strip() == input.get_input().strip()
+
+commit:35bb1c
+fixed file structure
