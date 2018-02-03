@@ -31,10 +31,10 @@ class Door:
             GPIO.output(port, GPIO.LOW)
 
     def open(self):
-        open(port_door, port_led_yes, port_led_no)
+        open(self.port_door, self.port_led_yes, self.port_led_no)
 
     def close(self):
-        close(port_door, port_led_yes, port_led_no)
+        close(self.port_door, self.port_led_yes, self.port_led_no)
 
 
 def test():
