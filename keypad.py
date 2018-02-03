@@ -39,4 +39,5 @@ class Keypad:
 
 
 while(True):
-    read()
+    keypad = Keypad()
+    keypad.read()
