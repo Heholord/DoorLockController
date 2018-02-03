@@ -26,4 +26,4 @@ def printKey(key):
 # printKey will be called each time a keypad button is pressed
 keypad.registerKeyPressHandler(printKey)
 
-time.sleep(5)
+time.sleep(60)
