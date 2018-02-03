@@ -4,23 +4,22 @@ import RPi.GPIO as GPIO
 class keypad():
     def __init__(self, columnCount = 4):
 
-
-         GPIO.setmode(GPIO.BOARD)
+        GPIO.setmode(GPIO.BOARD)
         # or
         # GPIO.setmode(GPIO.BCM)
 
         # Define pins to use for 3x4 Keypad
         # Rows
 
-    # pin1 = "P8_14"
-    # pin2 = "P8_16"
-    # pin3 = "P8_11"
-    # pin4 = "P9_13"
-    #
-    # pin5 = "P9_12"
-    # pin6 = "P9_26"
-    # pin7 = "P9_40"
-    # pin8 = "p9_24"
+        # pin1 = "P8_14"
+        # pin2 = "P8_16"
+        # pin3 = "P8_11"
+        # pin4 = "P9_13"
+        #
+        # pin5 = "P9_12"
+        # pin6 = "P9_26"
+        # pin7 = "P9_40"
+        # pin8 = "p9_24"
 
         pin1 = 14
         pin2 = 16
