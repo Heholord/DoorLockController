@@ -5,7 +5,7 @@ import time
 checker = Keypad_pass_checker()
 door = Door()
 access = checker.auth()
-while true:
+while True:
     access = checker.auth()
     if access:
         break
