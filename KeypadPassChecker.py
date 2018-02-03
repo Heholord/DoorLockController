@@ -4,7 +4,7 @@ import myfile
 
 class Keypad_pass_checker:
     def auth(self):
-        inputt = KeyInput()
+        inputt = Input()
         checker = Check()
 
         inputt.read()
