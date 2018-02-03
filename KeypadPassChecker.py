@@ -25,12 +25,15 @@ class Keypad_pass_checker:
         def compare(self, input):
             return self.solution == input.get_input()
 
+    def auth(self):
+        inputt = Input()
+        checker = Check()
 
-inputt = Input()
-checker = Check()
+        inputt.read()
+        if checker.compare(inputt):
+            print("access granted")
+        else:
+            print("sorry no")
 
-inputt.read()
-if checker.compare(inputt):
-    print("access granted")
-else:
-    print("sorry no")
+checker = Keypad_pass_checker()
+checker.auth()
