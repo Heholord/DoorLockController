@@ -4,9 +4,6 @@ import myfile
 
 class Keypad_pass_checker:
 
-    def compare(input, pass):
-        return pass.compare(input.getInput)
-
     class Input:
         def __init__(self):
             self.keypad = Keypad()
