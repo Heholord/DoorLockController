@@ -1,5 +1,5 @@
 from keypad.KeypadPassChecker import Keypad_pass_checker
-from door import Door
+from door.Door import Door
 
 checker = Keypad_pass_checker()
 door = Door()
