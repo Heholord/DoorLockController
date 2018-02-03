@@ -4,9 +4,9 @@ import RPi.GPIO as GPIO
 class keypad():
     def __init__(self, columnCount = 4):
 
-        GPIO.setmode(GPIO.BOARD)
+        # GPIO.setmode(GPIO.BOARD)
         # or
-        # GPIO.setmode(GPIO.BCM)
+        GPIO.setmode(GPIO.BCM)
 
         # Define pins to use for 3x4 Keypad
         # Rows
