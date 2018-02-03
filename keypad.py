@@ -25,15 +25,17 @@ class Keypad:
 
     def read(self):
         try:
+            val = "";
             for j in range(4):
                 GPIO.output(self.COL[j], 0)
 
                 for i in range(4):
                     if GPIO.input(self.ROW[i]) == 0:
-                        return self.MATRIX[i][j]
+                        val = self.MATRIX[i][j]
                         while (GPIO.input(self.ROW[i]) == 0):
                             pass
                 GPIO.output(self.COL[j],1)
+                return val
         except KeyboardInterrupt:
             GPIO.cleanup()
 
