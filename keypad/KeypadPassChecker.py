@@ -1,5 +1,5 @@
-import keypad.keypad
-import tools.myfile
+from keypad import Keypad
+from tools import myfile
 
 
 class Keypad_pass_checker:
@@ -16,7 +16,7 @@ class Keypad_pass_checker:
 
 class Input:
     def __init__(self):
-        self.keypad = keypad.Keypad()
+        self.keypad = Keypad()
 
     def read(self):
         self.trial = ""
@@ -33,7 +33,7 @@ class Input:
 
 class Checker:
     def __init__(self):
-        self.solution = myfile.readfile("test")
+        self.solution = myfile.readfile("keypad/test")
 
     def compare(self, input):
         print("solution " + self.solution.strip())
