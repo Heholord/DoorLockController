@@ -4,6 +4,6 @@ from door.Door import Door
 checker = Keypad_pass_checker()
 door = Door()
 if checker.auth():
-    door.openn()
+    door.open_door()
     sleep()
-    door.closee()
+    door.close_door()
