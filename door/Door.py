@@ -4,7 +4,7 @@ import time
 
 class Door:
     def __init__(self):
-        self.port_led_red = 38
+        self.port_led_no = 38
         self.port_door = 40
         self.port_led_yes = 36
 
