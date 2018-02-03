@@ -7,6 +7,6 @@ door = Door()
 if checker.auth():
     for i in range(0, 20):
         door.open_door()
-        time.sleep(0.05)
+        time.sleep(0.02)
         door.close_door()
-        time.sleep(0.05)
+        time.sleep(0.02)
