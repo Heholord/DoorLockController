@@ -37,6 +37,6 @@ class Checker:
         self.solution = myfile.readfile("keypad/test")
 
     def compare(self, input):
-        print("solution " + self.solution.strip())
-        print("input " + input.get_input().strip())
+        #print("solution " + self.solution.strip())
+        #print("input " + input.get_input().strip())
         return self.solution.strip() == input.get_input().strip()
