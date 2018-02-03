@@ -25,6 +25,7 @@ class Keypad:
 
     def read(self):
         try:
+            val
             while (val is not None):
                 for j in range(4):
                     GPIO.output(self.COL[j], 0)
