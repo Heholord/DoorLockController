@@ -40,8 +40,8 @@ class Keypad:
         except KeyboardInterrupt:
             GPIO.cleanup()
 
-
-while(True):
-    keypad = Keypad()
-    print(keypad.read())
-    time.sleep(0.1)
+def test():
+    while(True):
+        keypad = Keypad()
+        print(keypad.read())
+        time.sleep(0.1)
