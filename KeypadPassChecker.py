@@ -12,6 +12,7 @@ class Keypad_pass_checker:
             self.trial = ""
             while(self.keypad.read != "#"):
                 self.trial += keypad.read()
+                print(self.trial)
             return self.trial
 
         def get_input(self):
@@ -25,11 +26,11 @@ class Keypad_pass_checker:
             return self.solution == input.get_input()
 
 
-input = Input()
+inputt = Input()
 checker = Check()
 
-input.read()
-if checker.compare(input):
+inputt.read()
+if checker.compare(inputt):
     print("access granted")
 else:
     print("sorry no")
