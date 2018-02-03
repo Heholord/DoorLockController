@@ -5,6 +5,7 @@ import time
 checker = Keypad_pass_checker()
 door = Door()
 if checker.auth():
-    door.open_door()
-    time.sleep(3)
-    door.close_door()
+    for i in [0, 100]:
+        door.open_door()
+        time.sleep(0.2)
+        door.close_door()
