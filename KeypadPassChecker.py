@@ -22,7 +22,7 @@ class Input:
         self.trial = ""
         char = self.keypad.read()
         while(char != "#"):
-            self.trial += keypad.read()
+            self.trial += char
             print(self.trial)
             char = self.keypad.read()
         return self.trial
