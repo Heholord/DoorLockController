@@ -31,7 +31,7 @@ class Keypad:
                 for i in range(4):
                     if GPIO.input(self.ROW[i]) == 0:
                         print(self.MATRIX[i][j])
-                        while (self.GPIO.input(ROW[i]) == 0):
+                        while (GPIO.input(ROW[i]) == 0):
                             pass
                 GPIO.output(self.COL[j],1)
         except KeyboardInterrupt:
