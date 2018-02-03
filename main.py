@@ -9,3 +9,4 @@ while not access:
     access = checker.auth()
 #if access:
 door.open_door()
+door.close_door()
