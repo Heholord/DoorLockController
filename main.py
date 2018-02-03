@@ -8,4 +8,4 @@ access = checker.auth()
 while not access:
     access = checker.auth()
 #if access:
-    door.open_door()
+door.open_door()
