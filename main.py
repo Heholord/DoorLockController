@@ -6,6 +6,6 @@ checker = Keypad_pass_checker()
 door = Door()
 access = checker.auth()
 while not access:
-    in = checker.auth()
+    access = checker.auth()
 if access:
     door.open_door()
