@@ -1,4 +1,8 @@
 from keypad import KeypadPassChecker
 
 checker = Keypad_pass_checker()
-checker.auth()
+door = Door()
+if checker.auth():
+    door.open()
+    sleep()
+    door.close()

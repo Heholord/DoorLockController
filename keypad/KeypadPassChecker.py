@@ -1,4 +1,4 @@
-import keypad.keypad
+#from keypad import Keypad
 import tools.myfile
 
 
@@ -12,6 +12,7 @@ class Keypad_pass_checker:
             print("access granted")
         else:
             print("sorry no")
+        return checker.compare(inputt)
 
 
 class Input:
