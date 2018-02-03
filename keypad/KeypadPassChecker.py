@@ -1,5 +1,5 @@
-import keypad
-import myfile
+import keypad.keypad
+import tools.myfile
 
 
 class Keypad_pass_checker:
