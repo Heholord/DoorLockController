@@ -6,16 +6,26 @@ class keypad():
 
         # Define pins to use for 3x4 Keypad
         # Rows
-        pin1 = "P8_14"
-        pin2 = "P8_16"
-        pin3 = "P8_11"
-        pin4 = "P9_13"
+        # pin1 = "P8_14"
+        # pin2 = "P8_16"
+        # pin3 = "P8_11"
+        # pin4 = "P9_13"
 
         # Columns
-        pin5 = "P9_12"
-        pin6 = "P9_26"
-        pin7 = "P9_40"
-        pin8 = "p9_24"
+        # pin5 = "P9_12"
+        # pin6 = "P9_26"
+        # pin7 = "P9_40"
+        # pin8 = "p9_24"
+
+        pin1 = 14
+        pin2 = 16
+        pin3 = 11
+        pin4 = 13
+
+        pin5 = 12
+        pin6 = 26
+        pin7 = 40
+        pin8 = 24
 
         # # CONSTANTS
         # if columnCount is 3:
