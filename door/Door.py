@@ -12,14 +12,14 @@ class Door:
         GPIO.setwarnings(False)
 
     def openn(self, door_port, light_port_yes, light_port_no):
-        toogle(light_port_no, False)
-        toogle(door_port, True)
-        toogle(light_port_yes, True)
+        self.toogle(light_port_no, False)
+        self.toogle(door_port, True)
+        self.toogle(light_port_yes, True)
 
     def closee(self, door_port, light_port_yes, light_port_no):
-        toogle(light_port_no, True)
-        toogle(door_port, False)
-        toogle(light_port_yes, False)
+        self.toogle(light_port_no, True)
+        self.toogle(door_port, False)
+        self.toogle(light_port_yes, False)
 
     def toogle(self, port, on):
         GPIO.setup(port, GPIO.OUT)
