@@ -41,4 +41,4 @@ class Keypad:
 while(True):
     keypad = Keypad()
     keypad.read()
-    time.sleep(1)
+    time.sleep(0.1)
