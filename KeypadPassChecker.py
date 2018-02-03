@@ -36,9 +36,9 @@ class Checker:
         self.solution = myfile.readfile("test")
 
     def compare(self, input):
-        print("solution " + self.solution)
-        print("input " + input.get_input())
-        return self.solution == input.get_input()
+        print("solution " + self.solution.strip())
+        print("input " + input.get_input().strip())
+        return self.solution.strip() == input.get_input().strip()
 
 checker = Keypad_pass_checker()
 checker.auth()
