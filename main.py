@@ -4,9 +4,8 @@ import time
 
 checker = Keypad_pass_checker()
 door = Door()
-if checker.auth():
-    for i in range(0, 50):
-        door.open_door()
-        time.sleep(0.02)
-        door.close_door()
-        time.sleep(0.02)
+in = checker.auth()
+while not in:
+    in = checker.auth()
+if in:
+    door.open_door()

@@ -13,8 +13,12 @@ class Door:
 
     def openn(self, door_port, light_port_yes, light_port_no):
         self.toogle(light_port_no, False)
-        self.toogle(door_port, True)
         self.toogle(light_port_yes, True)
+        for i in range(0, 50):
+            self.toogle(door_port, True)
+            time.sleep(0.02)
+            self.toogle(door_port, False)
+            time.sleep(0.02)
 
     def closee(self, door_port, light_port_yes, light_port_no):
         self.toogle(light_port_no, True)
@@ -23,8 +27,6 @@ class Door:
 
     def toogle(self, port, on):
         GPIO.setup(port, GPIO.OUT)
-        # LEDs
-        print "LED on"
         if on:
             GPIO.output(port, GPIO.HIGH)
         else:
