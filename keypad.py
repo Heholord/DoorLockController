@@ -27,10 +27,9 @@ class Keypad:
         try:
             for j in range(4):
                 GPIO.output(self.COL[j], 0)
-
                 for i in range(4):
                     if GPIO.input(self.ROW[i]) == 0:
-                        return self.MATRIX[i][j])
+                        return self.MATRIX[i][j]
         except KeyboardInterrupt:
             GPIO.cleanup()
 
