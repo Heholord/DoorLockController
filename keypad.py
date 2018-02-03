@@ -23,7 +23,7 @@ class Keypad:
         for i in range(4):
             GPIO.setup(self.ROW[i], GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
-    def read():
+    def read(self):
         try:
             for j in range(4):
                 GPIO.output(self.COL[j], 0)
