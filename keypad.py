@@ -17,7 +17,7 @@ class Keypad:
         self.COL = [12, 16, 18, 22]
 
         for j in range(4):
-            GPIO.setup(self.COL[j], self.GPIO.OUT)
+            GPIO.setup(self.COL[j], GPIO.OUT)
             GPIO.output(self.COL[j], 1)
 
         for i in range(4):
