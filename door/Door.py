@@ -23,8 +23,10 @@ class Door:
         GPIO.setup(port, GPIO.OUT)
         # LEDs
         print "LED on"
-        if on GPIO.output(port, GPIO.HIGH)
-        else GPIO.output(port, GPIO.LOW)
+        if on:
+            GPIO.output(port, GPIO.HIGH)
+        else:
+            GPIO.output(port, GPIO.LOW)
 
     def open(self):
         open(port_door, port_led)
