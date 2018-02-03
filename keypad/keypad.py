@@ -8,10 +8,12 @@ class Keypad:
         GPIO.setmode(GPIO.BOARD)
         GPIO.setwarnings(False)
 
-        self.MATRIX = [[1, 2, 3, "A"],
-                  [4, 5, 6, "B"],
-                  [7, 8, 9, "C"],
-                  ['*', 0, '#', 'D']]
+        self.MATRIX = [
+            [1, 2, 3, "A"],
+            [4, 5, 6, "B"],
+            [7, 8, 9, "C"],
+            ['*', 0, '#', 'D']
+        ]
 
         self.ROW = [7, 11, 13, 15]
         self.COL = [12, 16, 18, 22]
