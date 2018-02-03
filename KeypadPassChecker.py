@@ -16,7 +16,7 @@ class Keypad_pass_checker:
 
 class Input:
     def __init__(self):
-        self.keypad = Keypad()
+        self.keypad = keypad.Keypad()
 
     def read(self):
         self.trial = ""
