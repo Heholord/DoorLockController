@@ -5,21 +5,21 @@ import time
 class Door:
     def __init__(self):
         self.port_led_no = 38
-        self.port_door = 40
-        self.port_led_yes = 36
+        self.port_door = 36
+        self.port_led_yes = 40
 
         GPIO.setmode(GPIO.BOARD)
         GPIO.setwarnings(False)
 
-    def open(self, door_port, light_port_yea, light_port_no):
+    def open(self, door_port, light_port_yes, light_port_no):
         toogle(light_port_no, False)
         toogle(door_port, True)
         toogle(light_port_yes, True)
 
-    def close(self, door_port, light_port):
+    def close(self, door_port, light_port_yes, light_port_no):
         toogle(light_port_no, True)
         toogle(door_port, False)
-        toogle(light_port, False)
+        toogle(light_port_yes, False)
 
     def toogle(self, port, on):
         GPIO.setup(port, GPIO.OUT)
