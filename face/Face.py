@@ -5,7 +5,7 @@ import numpy as np
 
 class Face_recognizer:
     def __init__(self):
-        self.subjects = ["", "Rami", "Manuel", "Manuel2", "Mehran"]
+        self.subjects = ["", ]
         self.training_folder = "training"
         self.test_dir = "test"
 
