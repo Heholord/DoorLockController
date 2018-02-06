@@ -1,4 +1,4 @@
-from keypad import Keypad
+from checker.keypad import Keypad
 from tools import myfile
 
 
@@ -34,7 +34,7 @@ class Input:
 
 class Checker:
     def __init__(self):
-        self.solution = myfile.readfile("keypad/test")
+        self.solution = myfile.readfile("checker/keypad/test")
 
     def compare(self, input):
         #print("solution " + self.solution.strip())
