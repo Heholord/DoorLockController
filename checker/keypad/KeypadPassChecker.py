@@ -1,4 +1,4 @@
-from checker.keypad import Keypad
+from keypad import Keypad
 from tools import myfile
 
 
