@@ -36,6 +36,7 @@ class Keypad:
                         if GPIO.input(self.ROW[i]) == 0:
                             val = self.MATRIX[i][j]
                             while (GPIO.input(self.ROW[i]) == 0):
+                                time.sleep(0.1)
                                 pass
                     GPIO.output(self.COL[j], 1)
             return val
@@ -46,4 +47,3 @@ def test():
     while(True):
         keypad = Keypad()
         print(keypad.read())
-        time.sleep(0.1)

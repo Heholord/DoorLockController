@@ -7,6 +7,5 @@ door = Door()
 while True:
     if checker.auth():
         break
-#if access:
-door.open_door()
-door.close_door()
+#door.open_door()
+#/door.close_door()
